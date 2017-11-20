@@ -1,5 +1,6 @@
-# parakeet
-A Trash Batch File.  Name inspired by GitHub.
+:: parakeet
+:: A trash .bat file to copy only playable extensions from one Retropie USB directory to another without copying .srm files or .state files (or whatever other unnecessary files). Trash name inspired by GitHub. Edit
+Add topics
 
 @echo off
 setlocal EnableDelayedExpansion
