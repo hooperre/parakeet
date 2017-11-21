@@ -240,6 +240,16 @@ set pc_source=%source%\pc\
 set pc_dest=%destination%\pc\
 
 
+
+
+
+
+::Global Save State and Saved Drive Files --- WIP!!!
+::No source or destination addresses necessary
+:SavesPE
+set save_extensions[1]=.state
+set save_extensions[2]=.srm
+
 :: ======================================================
 :: Begin Amiga Script
 :: ======================================================
