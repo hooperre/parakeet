@@ -1,15 +1,17 @@
 :: parakeet
-:: A trash .bat file to copy only playable extensions from one Retropie USB directory to another without copying .srm files or .state files (or whatever other unnecessary files). Trash name inspired by GitHub. Edit
-Add topics
+:: A trash .bat file to copy only playable extensions from one Retropie USB directory to another without copying .srm files or .state files (or whatever other unnecessary files). Trash name inspired by GitHub.
 
 @echo off
 setlocal EnableDelayedExpansion
 title RetroPie Update In Progress!!!
 color 1F
 
+::Set Version Number
+set version=Version Alpha 0.0.1 - 11/14/17
+
 echo ++++++++++++++++++++++++++++++++++++++++++++++
 echo Retropie USB Update Script -- @hooperre
-echo Version Beta 0.0.1 - 11/14/17
+echo %version%
 ver
 echo ++++++++++++++++++++++++++++++++++++++++++++++
 echo.
@@ -49,7 +51,7 @@ echo.
 pause
 echo ++++++++++++++++++++++++++++++++++++++++++++++ > "%source%\log.txt"
 echo Retropie USB Update Script -- @hooperre >> "%source%\log.txt"
-echo Version Beta 0.0.1 - 11/14/17 >> "%source%\log.txt"
+echo %version% >> "%source%\log.txt"
 ver >> "%source%\log.txt"
 echo ++++++++++++++++++++++++++++++++++++++++++++++ >> "%source%\log.txt"
 echo. >> "%source%\log.txt"
